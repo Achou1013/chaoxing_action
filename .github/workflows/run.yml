@@ -24,9 +24,8 @@ jobs:
         USER: ${{ secrets.USER }}
         PASSWORD: ${{ secrets.PASSWORD }}
         SECRET:  ${{ secrets.SECRET }}
-        RUN_TIME: ${{ secrets.RUN_TIME }}
+        RUN_TIME: "1"
         LATITUDE:  ${{ secrets.LATITUDE }}
         LONGITUDE: ${{ secrets.LONGITUDE }}
       run: |
         python3 local_sign.py
-
